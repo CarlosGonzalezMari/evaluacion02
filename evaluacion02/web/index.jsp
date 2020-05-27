@@ -9,9 +9,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Inicio</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body><center>
+        <h1>Inicio de sesion</h1>
+        <form action="Ingreso" method="post">   
+            
+            <table style="border: 1; ">
+                <tr>
+                    <td>Usuario</td>
+                    <td><input type="text" name="usuario" /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td><a href="registro.jsp">Registrar</a></td>
+                    <td><input type="submit" value="ingresar"/></td>
+                </tr>
+            </table>
+           <% if(request.getParameter("mensaje")!=null){%>
+           <%=request.getParameter("mensaje") %>
+           <%}%>
+        </form>
+        </center>
     </body>
 </html>
