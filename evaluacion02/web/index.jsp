@@ -13,6 +13,7 @@
     </head>
     <body><center>
         <h1>Inicio de sesion</h1>
+        <h2>hola</h2>
         <form action="Ingreso" method="post">   
             
             <table style="border: 1; ">
